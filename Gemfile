@@ -9,6 +9,10 @@ gem 'rails', '4.1.6'
 gem 'bootstrap-sass'
 gem 'sprockets'
 
+gem 'bcrypt-ruby', '3.1.2'
+
+gem 'minitest'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
