@@ -1,0 +1,7 @@
+<%= @book.name %>, <%= @book.number %>
+
+<% provide(:title, @book.name) %>
+<h1>
+	<%= book_gravatar_for @book %>
+	<%= @book.name %>
+</h1>

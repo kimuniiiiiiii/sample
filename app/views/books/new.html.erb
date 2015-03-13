@@ -1,0 +1,22 @@
+<%= provide(:title, 'Registration') %>
+
+<h1>Registration of Book</h1>
+
+<div class="row">
+	<div class="span6 offset3">
+		<%= form_for(@book) do |f| %>
+
+		<%= f.label :name, "name2" %>
+	    <%= f.text_field :name %>
+
+	    <%= f.label :number %>
+	    <%= f.text_field :number %>
+
+	    <%= f.label :lendable %>
+	    <%= f.text_field :lendable %>
+	    
+	    <%= f.submit "Register a book", class: "btn btn-primary" %>
+	    <% end %>
+	</div>
+</div>
+

@@ -3,6 +3,7 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$grayLight:       #999;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -178,3 +179,34 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
+/* books index */
+
+.books {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLight;
+    &:last-child {
+      border-bottom: 1px solid $grayLight;
+    }
+  }
+}
+
+/* バックグラウンドを名いっぱいつかう　*/
+
+body {
+  background: image-url("sweden.JPG") center center / cover no-repeat fixed;
+  background-size:cover;
+}
+/*
+welcome {
+  background-image:url(<%= asset_path 'sweden.JPG'%>);
+  background-size: cover;
+  padding-top : 10px;
+  padding-bottom: 300px;
+}
+*/
+

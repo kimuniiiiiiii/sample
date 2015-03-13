@@ -1,0 +1,84 @@
+<% provide(:title, "Test") %>
+
+<div class="t">
+	<h1>Model Test</h1>
+	<h3>Welcome!</br>This page is for a test!</h3>
+	<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-3" style="background:pink;">Side1</div>
+		<div class="col-sm-6 col-xs-6" style="background:gray;">Main2</div>
+		<div class="col-sm-3 col-xs-6" style="background:orange;">Side1</div>
+	</div>
+	</div>
+	<div class="container" style="padding:20px;">
+		<table class="table table-hover">
+			<thead>
+				<tr><th>サイト名</th><th>URL</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>Google</td><td><a href=http://google.com>http://google.com</a></td></tr>
+				<tr><td>Google</td><td><a href=http://google.com>http://google.com</a></td></tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container">
+		<form class="form-inline">
+			<div class="form-group">
+				<label class="control-label" for="email">Email</label>
+				<input type="text" id="email" class="form-control" placeholder="email">
+			</div>
+			<div class="form-group">
+				<input type="submit" value="submit" class="btn btn-primary">
+			</div>
+		</form>
+	</div>
+
+
+
+	<form class="form-horizontal container" style="margin-top:60px;">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="email">Email</label>
+			<div class="col-sm-4">
+				<input type="text" id="email" class="form-control" placeholder="email">
+			</div>
+		</div>
+
+		<div class="foam-group">
+			<label class="control-label col-sm-2" for="email" >Email</label>
+			<div class="col-sm-4">
+				<input type="text" id="email" class="form-control" placeholder="email">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-4">
+				<button type="submit" value="submit" class="btn btn-primary">Submit!</button>
+			</div>
+		</div>
+	</form>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<%= link_to "All Books", books_path %>
+		</div>
+		<div class="col-sm-6" style="background: black; padding:100px 0 100px 0; margin-color:pink; margin-top:10px; border:5px solid pink; margin:10px solid blue">
+			<%= link_to "Register", new_book_path %>
+		</div>
+	</div>
+
+	<blockquote>
+		<ol>
+			<li>相模大野高校</li>
+			<li>代々木ゼミナール町田校</li>
+			<li>東京大学理科二類</li>
+		</ol>
+		<small>この人だれ！</small>
+		<footer>Yuya Kimuraの歴史より</footer>
+	</blockquote>
+	<br>
+	<br>
+	<br>
+	<p> <address>タグがどのように使われることができるかという2つの例が、ここにあります。</p>
+
+</div>

@@ -1,15 +1,21 @@
 <% provide(:title, 'Home') %>
-
-<div class="center hero-unit">
-  <h1>Welcome to the KimurApp</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+	<div class="row">
+		<div class="col-xs-7" style="padding:100px;">
+			<div class="hero-unit welcome">
+	
+	  		<h1>Welcome to my homepage</h1>
+			<h1 class="h4">from Yuya Kimura</h1>
+	  		<h2 style="color:black;">
+	    		This is the home page for introducing me,
+	    		<a href="https://www.facebook.com/kimura.yuya.14" style="color:green;">Yuya Kimura</a>
+	    		.
+	  		</h2>
+	  		<div class="center">
+	  			<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+	  		</div>
+	  	</div>
+	</div>
 </div>
-
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<div class="container" style="padding:10px;">
+	<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+</div>
